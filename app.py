@@ -62,7 +62,7 @@ def page_datasets():
     
     st.markdown("### Nos jeux de données")
     try:
-        st.image("images/datasets.png", caption="À gauche : Texture (avantage CNN). À droite : Distance (avantage ViT).", use_container_width=True)
+        st.image("datasets.png", caption="À gauche : Texture (avantage CNN). À droite : Distance (avantage ViT).", use_container_width=True)
     except:
         st.warning("Image introuvable : Vérifiez que 'datasets.png' ou 'datasets.jpg' est bien dans le dossier 'images'.")
 
@@ -79,7 +79,7 @@ def page_resultats():
     if experience == "Exp 1 : 1k images (Volume initial)":
         st.subheader("Résultats avec 1000 images")
         try:
-            st.image("images/graphe_1k.png", use_container_width=True)
+            st.image("graphe_1k.png", use_container_width=True)
         except:
             st.info("Le graphique 'graphe_1k.png' s'affichera ici.")
         st.success("""
@@ -91,7 +91,7 @@ def page_resultats():
     elif experience == "Exp 3 : 10k images (Volume massif)":
         st.subheader("Résultats avec 10 000 images")
         try:
-            st.image("images/graphe_10k.png", use_container_width=True)
+            st.image("graphe_10k.png", use_container_width=True)
         except:
             st.info("Le graphique 'graphe_10k.png' s'affichera ici.")
         st.success("""
@@ -103,7 +103,7 @@ def page_resultats():
     elif experience == "Exp 4 : 64x64 (Haute Résolution)":
         st.subheader("Résultats en 64x64")
         try:
-            st.image("images/graphe_64.png", use_container_width=True)
+            st.image("graphe_64.png", use_container_width=True)
         except:
             st.info("Le graphique 'graphe_64.png' s'affichera ici.")
         st.success("""
@@ -115,7 +115,7 @@ def page_resultats():
     elif experience == "Exp 5 : 10 classes (Robustesse)":
         st.subheader("Résultats Multi-classes")
         try:
-            st.image("images/graphe_10classes.png", use_container_width=True)
+            st.image("graphe_10classes.png", use_container_width=True)
         except:
             st.info("Le graphique 'graphe_10classes.png' s'affichera ici.")
         st.success("""
